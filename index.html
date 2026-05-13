@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Hoàng Văn Vinh - Personal portfolio of a UI/UX Designer student with a warm autumn design aesthetic." />
   <title>Hoàng Văn Vinh | UI/UX Designer Student</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="page-shell">
     <header class="topbar">
-      <a class="brand" href="#home">Hoàng Văn Vinh</a>
+      <a class="brand" href="#home">H.V. Vinh</a>
       <nav class="nav-links" aria-label="Primary navigation">
         <a href="#home">Home</a>
         <a href="#about">About</a>
@@ -24,123 +25,175 @@
 
     <main>
       <section class="hero" id="home">
-        <div class="hero-copy">
+        <div class="hero-copy content-panel" data-animate>
           <span class="eyebrow">UI/UX Designer Student</span>
-          <h1>Hoàng Văn Vinh</h1>
+          <h1 class="hero-title">
+            <span class="hero-name">Hoàng Văn Vinh</span>
+          </h1>
           <p class="hero-description">
-            Thiết kế trải nghiệm đơn giản, hiệu quả và có cảm xúc.
+            Thiết kế trải nghiệm đơn giản, hiệu quả và có cảm xúc. Kể câu chuyện bằng thiết kế ấm áp, sạch sẽ và chuyên nghiệp.
           </p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#projects">Xem dự án</a>
-            <a class="button button-secondary" href="#contact">Hire me</a>
+            <a class="button button-primary" href="#projects">See My Work</a>
+            <a class="button button-secondary" href="#contact">Hire Me</a>
           </div>
-          <div class="hero-stats">
+          <div class="hero-highlights">
             <div>
-              <strong>GDU University</strong>
-              <span>Major: CNNT – Đồ Họa Kỹ Thuật Số</span>
+              <span>GDU University</span>
+              <strong>CNNT – Digital Graphic Design</strong>
             </div>
             <div>
-              <strong>Focus</strong>
-              <span>Thiết kế sản phẩm & trải nghiệm cảm xúc</span>
+              <span>Current focus</span>
+              <strong>UI/UX design projects & emotional motion</strong>
             </div>
           </div>
         </div>
 
         <div class="hero-scene" aria-hidden="true">
-          <div class="scene-layer scene-sky"></div>
-          <div class="scene-layer scene-sun"></div>
-          <div class="scene-layer scene-glow"></div>
-          <div class="scene-layer scene-trees">
-            <div class="tree tree-large"></div>
-            <div class="tree tree-medium"></div>
-            <div class="tree tree-small"></div>
-          </div>
-          <div class="scene-layer scene-ground"></div>
-          <div class="scene-layer scene-leaves" id="leafContainer"></div>
+          <div class="scene-sky"></div>
+          <div class="scene-sun"></div>
+          <div class="scene-mountains"></div>
+          <div class="scene-forest"></div>
+          <div class="scene-glow"></div>
+          <div class="scene-leaves" id="leafContainer"></div>
         </div>
       </section>
 
       <section class="section about" id="about">
-        <div class="section-intro">
-          <span>About me</span>
+        <div class="section-intro" data-animate>
+          <span>About</span>
           <h2>Thiết kế với tâm thế của người kể chuyện</h2>
-          <p>Du học thiết kế và khám phá không gian màu sắc, âm nhạc và chuyển động nhẹ nhàng của cuộc sống.</p>
+          <p>Hiện tại tôi học tại GDU, chuyên ngành CNNT – Thiết kế đồ họa kỹ thuật số. Tôi hướng đến trải nghiệm đơn giản, dễ nhớ và giàu cảm xúc.</p>
         </div>
-        <div class="cards-grid">
-          <article class="info-card">
+
+        <div class="about-grid">
+          <article class="info-card" data-animate>
             <h3>Giới thiệu</h3>
-            <p>Tôi đam mê tạo ra trải nghiệm trực quan, ấm áp và dễ tiếp cận cho người dùng.</p>
+            <p>Tôi là một designer trẻ với niềm đam mê xây dựng trải nghiệm ấm áp, dễ tiếp cận và tỉ mỉ trong từng điểm chạm.</p>
           </article>
-          <article class="info-card">
+          <article class="info-card" data-animate>
             <h3>Học vấn</h3>
-            <p>GDU University — CNNT, Đồ Họa Kỹ Thuật Số.</p>
+            <p>GDU University - Chuyên ngành CNNT, Thiết kế Đồ họa Kỹ thuật số.</p>
           </article>
-          <article class="info-card">
+          <article class="info-card" data-animate>
             <h3>Hướng phát triển</h3>
-            <p>Thiết kế giao diện, thương hiệu trải nghiệm, và dự án kể chuyện bằng cảm xúc.</p>
+            <p>Tôi muốn trở thành UI/UX Designer chuyên nghiệp, tập trung vào thiết kế sản phẩm, thương hiệu trải nghiệm và storytelling.</p>
           </article>
-          <article class="info-card">
+          <article class="info-card" data-animate>
             <h3>Sở thích</h3>
             <ul>
-              <li>Âm nhạc</li>
-              <li>Game</li>
-              <li>Đi bộ thư giãn</li>
+              <li>Nghe nhạc</li>
+              <li>Chơi game</li>
+              <li>Đi bộ ngoài trời</li>
             </ul>
           </article>
         </div>
       </section>
 
       <section class="section projects" id="projects">
-        <div class="section-intro">
+        <div class="section-intro" data-animate>
           <span>Projects</span>
-          <h2>Portfolio album showcase</h2>
-          <p>Case study mượt mà, ánh sáng vàng nhạt và cảm giác studio nghệ thuật.</p>
+          <h2>Premium portfolio gallery</h2>
+          <p>Hai case study thể hiện cách tôi kết hợp cấu trúc UI tinh tế với không khí ấm áp, sáng tạo.</p>
         </div>
+
         <div class="projects-grid">
-          <article class="project-card">
-            <div class="project-visual project-bookmark"></div>
+          <article class="project-card" data-project="bookmark" tabindex="0" data-animate>
+            <div class="project-cover project-cover-bookmark">
+              <div class="project-tag">Bookmark Design</div>
+            </div>
             <div class="project-copy">
               <h3>Bookmark Design</h3>
-              <p>Thiết kế hệ thống bookmark cảm xúc, đơn giản và cao cấp.</p>
+              <p>Dự án thiết kế bookmark với hệ màu nhẹ nhàng, trải nghiệm hướng đến cảm giác cá nhân và sang trọng.</p>
               <span>Role: UI/UX, Visual Design</span>
+              <button class="project-action" type="button" data-project="bookmark">View gallery</button>
+            </div>
+            <div class="project-thumbnails">
+              <div class="thumb thumb-1"></div>
+              <div class="thumb thumb-2"></div>
+              <div class="thumb thumb-3"></div>
             </div>
           </article>
-          <article class="project-card">
-            <div class="project-visual project-3d"></div>
+
+          <article class="project-card" data-project="model" tabindex="0" data-animate>
+            <div class="project-cover project-cover-model">
+              <div class="project-tag">3D Model Design</div>
+            </div>
             <div class="project-copy">
               <h3>3D Model Design</h3>
-              <p>Không gian 3D tinh tế, ánh sáng chiều hoàng hôn và đường nét mềm mại.</p>
+              <p>Một màn hình thiết kế 3D với ánh sáng chiều hoàng hôn, tỷ lệ tinh tế và chất liệu mềm mại.</p>
               <span>Role: 3D Concept, Interface</span>
+              <button class="project-action" type="button" data-project="model">View gallery</button>
+            </div>
+            <div class="project-thumbnails">
+              <div class="thumb thumb-4"></div>
+              <div class="thumb thumb-5"></div>
+              <div class="thumb thumb-6"></div>
             </div>
           </article>
         </div>
       </section>
 
       <section class="section skills" id="skills">
-        <div class="section-intro">
+        <div class="section-intro" data-animate>
           <span>Skills</span>
-          <h2>Tools I use</h2>
-          <p>Giao diện, ảnh, minh họa và thiết kế trải nghiệm đều được tạo ra bằng những công cụ này.</p>
+          <h2>Modern skill profile</h2>
+          <p>Biểu diễn năng lực chuyên môn với cách trình bày rõ ràng, dễ quét và trực quan cho nhà tuyển dụng.</p>
         </div>
+
         <div class="skills-grid">
-          <div class="skill-card">Figma</div>
-          <div class="skill-card">Photoshop</div>
-          <div class="skill-card">Illustrator</div>
+          <article class="skill-card" data-animate>
+            <h3>Figma</h3>
+            <p>Thiết kế hệ thống, prototyping và UI component.</p>
+            <div class="skill-progress"><span style="width: 92%"></span></div>
+          </article>
+          <article class="skill-card" data-animate>
+            <h3>Photoshop</h3>
+            <p>Ảnh, moodboard và chỉnh màu tinh tế.</p>
+            <div class="skill-progress"><span style="width: 85%"></span></div>
+          </article>
+          <article class="skill-card" data-animate>
+            <h3>Illustrator</h3>
+            <p>Minh họa, icon và họa tiết thương hiệu.</p>
+            <div class="skill-progress"><span style="width: 82%"></span></div>
+          </article>
+          <article class="skill-card experience-card" data-animate>
+            <h3>Experience</h3>
+            <ul>
+              <li>UI concept, layout, prototype</li>
+              <li>Thiết kế cảm xúc & storytelling</li>
+              <li>Responsive design & visual polish</li>
+            </ul>
+          </article>
         </div>
       </section>
 
       <section class="section contact" id="contact">
-        <div class="contact-panel">
+        <div class="contact-panel" data-animate>
           <div>
             <span>Contact</span>
-            <h2>Let's build something warm together.</h2>
-            <p>Nếu bạn đang tìm một designer trẻ với phong cách ấm áp, tinh tế và đầy cảm xúc, hãy liên hệ ngay.</p>
+            <h2>Let's create a warm, trusted experience together.</h2>
+            <p>Nếu bạn cần một UI/UX Designer trẻ với phong cách chuyên nghiệp và giàu cảm xúc, tôi rất sẵn sàng cộng tác.</p>
             <a class="button button-primary button-large" href="mailto:hoangvanvinh8464@gmail.com">hoangvanvinh8464@gmail.com</a>
           </div>
         </div>
       </section>
     </main>
   </div>
+
+  <div class="modal" id="projectModal" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Close project preview">×</button>
+      <div class="modal-copy">
+        <span class="eyebrow">Case Study Preview</span>
+        <h3 id="modalTitle">Project name</h3>
+        <p id="modalDescription">Short project description appears here.</p>
+      </div>
+      <div class="modal-gallery" id="modalGallery"></div>
+    </div>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
